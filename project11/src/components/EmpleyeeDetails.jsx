@@ -57,29 +57,25 @@ const EmpleyeeDetails = () => {
             salary: 22200,
             },
         ]
+        
   return (
     <>
     <div>
     <h1>Employees Details</h1>
     <ul>
     {employees.map((EmployeeDetails)=>(
-    <li><h4>
+    <li style={EmployeeDetails.level==2? {backgroundColor:'orange'}:{}}><h4>
     name: {EmployeeDetails.name},
     level: {EmployeeDetails.level},
     dept: {EmployeeDetails.dept},
     designation: {EmployeeDetails.designation},
     salary: {EmployeeDetails.salary}, 
-    </h4>
-    
+    </h4> 
     </li>
 ))}
     </ul>
-
     </div>
     </>
-
-
-  
   )
 }
 

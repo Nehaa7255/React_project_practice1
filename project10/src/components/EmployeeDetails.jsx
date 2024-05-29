@@ -68,7 +68,8 @@ const EmployeeDetails = () => {
     <h1>Employees Details</h1>
     <ul>
     {employees.map((EmployeeDetails)=>(
-    <li><h4>
+    <li>
+    <h4>
     name: {EmployeeDetails.name},
     level: {EmployeeDetails.level},
     dept: {EmployeeDetails.dept},
